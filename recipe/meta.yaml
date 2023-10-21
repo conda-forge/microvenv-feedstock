@@ -1,5 +1,5 @@
 {% set name = "microvenv" %}
-{% set version = "2023.4" %}
+{% set version = "2023.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/microvenv-{{ version }}.tar.gz
-  sha256: 0f8539efcd22a4ca81f2c14754c3fba8346dcaf02477036f3b35e6574b79bc1f
+  sha256: 128c0c8ab46e3bbd7b4c902c8a5d6333b694f9ebf871f123b473425cb6fbe19f
 
 build:
   noarch: python
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - hatchling
     - pip
   run:
-    - python >=3.7
+    - python >=3.8
 
 test:
   imports:
