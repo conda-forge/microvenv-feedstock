@@ -1,5 +1,5 @@
 {% set name = "microvenv" %}
-{% set version = "2023.5" %}
+{% set version = "2023.5.post1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/microvenv-{{ version }}.tar.gz
-  sha256: 128c0c8ab46e3bbd7b4c902c8a5d6333b694f9ebf871f123b473425cb6fbe19f
+  sha256: 32c46afea874e300f69f1add0806eb0795fd02b5fb251092fba0b73c059a7d1f
 
 build:
   noarch: python
